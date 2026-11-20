@@ -404,41 +404,41 @@ footer strong { color: #fff; }
 .loc-hub-card {
   background: #ffffff;
   border: 1.5px solid #E2E8F0;
-  border-radius: 16px;
-  padding: 22px 24px;
+  border-radius: 18px;
+  padding: 24px 26px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-decoration: none;
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1),
               border-color 0.2s ease;
   position: relative;
-  overflow: hidden;
+  min-height: 200px;
 }
 
 .loc-hub-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   border-color: var(--blue);
-  box-shadow: 0 12px 26px -6px rgba(0, 80, 240, 0.12), 0 4px 10px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 14px 30px -6px rgba(0, 80, 240, 0.12), 0 4px 10px rgba(15, 23, 42, 0.04);
 }
 
-.loc-card-header {
+.loc-card-head {
   display: flex;
   align-items: center;
-  gap: 14px;
+  justify-content: space-between;
 }
 
 .loc-pin-icon {
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   border-radius: 10px;
   background: #EFF6FF;
   color: var(--blue);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
@@ -447,20 +447,37 @@ footer strong { color: #fff; }
   color: #ffffff;
 }
 
-.loc-title-group {
+.loc-card-arrow-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  color: #64748B;
   display: flex;
-  flex-direction: column;
-  min-width: 0;
-  flex: 1;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.loc-hub-card:hover .loc-card-arrow-circle {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #ffffff;
+  transform: translate(2px, -2px);
+}
+
+.loc-card-main {
+  margin: 16px 0 14px;
 }
 
 .loc-card-city {
   font-family: Archivo, sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
   color: var(--navy);
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.15;
   transition: color 0.15s ease;
 }
 
@@ -469,54 +486,25 @@ footer strong { color: #fff; }
 }
 
 .loc-card-county {
-  font-size: 12px;
-  font-weight: 600;
+  display: block;
+  font-size: 11.5px;
+  font-weight: 700;
   color: #64748B;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-top: 2px;
-}
-
-.loc-card-arrow {
-  color: #94A3B8;
-  font-size: 18px;
-  font-weight: 700;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.loc-hub-card:hover .loc-card-arrow {
-  color: var(--blue);
-  transform: translate(2px, -2px);
-}
-
-.loc-card-body {
-  margin-top: 16px;
-  padding-top: 14px;
-  border-top: 1px solid #F1F5F9;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  letter-spacing: 0.08em;
+  margin-top: 4px;
 }
 
 .loc-card-districts {
-  font-size: 12.5px;
-  font-weight: 700;
-  color: #2563EB;
-  letter-spacing: 0.01em;
-}
-
-.loc-card-focus {
   font-size: 13.5px;
-  line-height: 1.5;
+  line-height: 1.45;
   color: var(--muted);
-  margin: 0;
+  margin: 10px 0 0;
 }
 
-.loc-card-footer {
-  margin-top: 18px;
-  padding-top: 12px;
-  border-top: 1px solid #F8FAFC;
+.loc-card-foot {
+  padding-top: 14px;
+  border-top: 1px solid #F1F5F9;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -525,12 +513,12 @@ footer strong { color: #fff; }
   color: var(--blue);
 }
 
-.loc-arrow-slide {
+.loc-foot-arrow {
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   display: inline-block;
 }
 
-.loc-hub-card:hover .loc-arrow-slide {
+.loc-hub-card:hover .loc-foot-arrow {
   transform: translateX(4px);
 }
 
