@@ -50,7 +50,7 @@ export default function ToolkitPage() {
       </section>
 
       {/* Active tool */}
-      <section style={{ background: 'var(--paper)' }}>
+      <section className="paper" style={{ background: 'var(--paper)', color: 'var(--text)' }}>
         <div className="wrap" style={{ paddingTop: 40, paddingBottom: 88 }}>
           <ActiveTool />
         </div>

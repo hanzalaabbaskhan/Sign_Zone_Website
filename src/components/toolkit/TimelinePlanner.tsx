@@ -64,15 +64,15 @@ export default function TimelinePlanner() {
         <ol style={{ listStyle: 'none', padding: 0, margin: 0 }}>
           {schedule.milestones.map((m, i) => (
             <li key={i} style={{ display: 'grid', gridTemplateColumns: '110px minmax(0,1fr)', gap: 18, padding: '14px 0', borderBottom: '1px solid #EDF1F7' }}>
-              <span style={{ fontWeight: 800, color: 'var(--blue)' }}>{fmt(m.date)}</span>
+              <span style={{ fontWeight: 800, color: 'var(--blue)', fontSize: 15 }}>{fmt(m.date)}</span>
               <span>
-                <strong style={{ display: 'block' }}>{m.label}</strong>
-                <span style={{ display: 'block', fontSize: 14, color: 'var(--muted)', marginTop: 2 }}>{m.desc}</span>
+                <strong style={{ display: 'block', color: 'var(--navy)', fontSize: 15 }}>{m.label}</strong>
+                <span style={{ display: 'block', fontSize: 14, color: 'var(--muted)', marginTop: 3, lineHeight: 1.5 }}>{m.desc}</span>
               </span>
             </li>
           ))}
         </ol>
-        <p style={{ fontSize: 12, lineHeight: 1.5, color: 'var(--muted2)', margin: '14px 0 0' }}>Typical durations. City review times vary and are the biggest unknown.</p>
+        <p style={{ fontSize: 12.5, lineHeight: 1.55, color: 'var(--muted)', margin: '14px 0 0' }}>Typical durations. City review times vary and are the biggest unknown.</p>
       </div>
     </div>
   )

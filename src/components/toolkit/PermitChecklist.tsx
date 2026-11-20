@@ -48,7 +48,7 @@ export default function PermitChecklist() {
         <span className="lbl" style={{ marginTop: 22, display: 'block' }}>Sign type</span>
         <ChipGroup options={[{ value: 'wall', label: 'Wall / channel letters' }, { value: 'blade', label: 'Blade / projecting' }, { value: 'monument', label: 'Monument' }, { value: 'pylon', label: 'Pylon / pole' }]} value={type} onChange={setType} />
 
-        <label style={{ display: 'flex', gap: 12, alignItems: 'center', marginTop: 22, cursor: 'pointer', fontWeight: 600 }}>
+        <label style={{ display: 'flex', gap: 12, alignItems: 'center', marginTop: 22, cursor: 'pointer', fontWeight: 600, color: 'var(--text)' }}>
           <input type="checkbox" checked={lit} onChange={e => setLit(e.target.checked)} style={{ width: 22, height: 22, accentColor: 'var(--blue)' }} />
           Illuminated (has power)
         </label>
@@ -57,21 +57,23 @@ export default function PermitChecklist() {
       <div className="panel" style={{ flex: '2 1 480px', minWidth: 0 }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 12, alignItems: 'baseline', marginBottom: 16 }}>
           <h3 style={{ margin: 0, fontSize: 22, color: 'var(--navy)' }}>{city}: what you&apos;ll need</h3>
-          <span className="badge">{items.length} items</span>
+          <span className="badge" style={{ background: '#EFF6FF', color: 'var(--blue)', border: '1px solid #DBEAFE', fontWeight: 700 }}>
+            {items.length} items
+          </span>
         </div>
         <ol className="checklist">
           {items.map((item, i) => (
             <li key={i}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0050F0" strokeWidth="2.5" style={{ flex: '0 0 20px' }}><polyline points="20 6 9 17 4 12"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0050F0" strokeWidth="2.5" style={{ flex: '0 0 20px', marginTop: 2 }}><polyline points="20 6 9 17 4 12"/></svg>
               <span>
-                <strong style={{ display: 'block' }}>{item.title}</strong>
-                <span style={{ display: 'block', fontSize: 14, color: 'var(--muted)', marginTop: 2 }}>{item.desc}</span>
+                <strong style={{ display: 'block', color: 'var(--navy)', fontSize: 15 }}>{item.title}</strong>
+                <span style={{ display: 'block', fontSize: 14, color: 'var(--muted)', marginTop: 3, lineHeight: 1.5 }}>{item.desc}</span>
                 <span className="who">{item.who}</span>
               </span>
             </li>
           ))}
         </ol>
-        <p style={{ fontSize: 12, lineHeight: 1.5, color: 'var(--muted2)', margin: '14px 0 0' }}>
+        <p style={{ fontSize: 12.5, lineHeight: 1.55, color: 'var(--muted)', margin: '14px 0 0' }}>
           General guide. Each city&apos;s sign code and zoning district can add steps. We confirm requirements during your site survey.
         </p>
       </div>

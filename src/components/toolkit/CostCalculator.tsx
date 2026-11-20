@@ -52,7 +52,7 @@ export default function CostCalculator() {
           <div>
             <label className="lbl" htmlFor="clt">Sign text</label>
             <input id="clt" className="inp" type="text" value={text} onChange={e => setText(e.target.value)} />
-            <span style={{ display: 'block', fontSize: 13, color: 'var(--muted2)', marginTop: 6 }}>
+            <span style={{ display: 'block', fontSize: 13, color: 'var(--muted)', marginTop: 6 }}>
               {text.replace(/[^A-Za-z0-9&]/g, '').length} letters (spaces don&apos;t count)
             </span>
           </div>
@@ -84,12 +84,12 @@ export default function CostCalculator() {
             {result.lines.map(([label, val]) => (
               <div key={label} style={{ display: 'flex', justifyContent: 'space-between', gap: 12, padding: '10px 0', borderBottom: '1px solid #EDF1F7', fontSize: 15 }}>
                 <span style={{ color: 'var(--muted)' }}>{label}</span>
-                <span style={{ fontWeight: 700 }}>{val}</span>
+                <span style={{ fontWeight: 700, color: 'var(--navy)' }}>{val}</span>
               </div>
             ))}
           </div>
         )}
-        <p style={{ fontSize: 12, lineHeight: 1.5, color: 'var(--muted2)', margin: 0 }}>Per-letter ranges reflect published 2026 U.S. pricing. Mounting, install and permit lines are sample values.</p>
+        <p style={{ fontSize: 12.5, lineHeight: 1.55, color: 'var(--muted)', margin: 0 }}>Per-letter ranges reflect published 2026 U.S. pricing. Mounting, install and permit lines are sample values.</p>
         <a className="btn btn-dark" href="/quote">Send this to Sign Zone →</a>
       </div>
     </div>

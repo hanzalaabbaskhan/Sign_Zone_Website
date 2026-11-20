@@ -60,7 +60,7 @@ export default function VisibilityCalculator() {
         <span className="lbl" style={{ marginTop: 22, display: 'block' }}>How busy is the area?</span>
         <ChipGroup options={[{ value: 'low', label: 'Quiet street' }, { value: 'mod', label: 'Typical commercial' }, { value: 'high', label: 'Busy, sign-heavy corridor' }]} value={env} onChange={setEnv} />
 
-        <label style={{ display: 'flex', gap: 12, alignItems: 'center', marginTop: 22, cursor: 'pointer', fontWeight: 600 }}>
+        <label style={{ display: 'flex', gap: 12, alignItems: 'center', marginTop: 22, cursor: 'pointer', fontWeight: 600, color: 'var(--text)' }}>
           <input type="checkbox" checked={caps} onChange={e => setCaps(e.target.checked)} style={{ width: 22, height: 22, accentColor: 'var(--blue)' }} />
           All capital letters
         </label>
@@ -74,7 +74,7 @@ export default function VisibilityCalculator() {
           <div className="out"><div className="outl">Line length</div><div className="outv s">{res.w}</div></div>
           <div className="out"><div className="outl">Suggested sign area</div><div className="outv s">{res.area}</div></div>
         </div>
-        <p style={{ fontSize: 12, lineHeight: 1.5, color: 'var(--muted2)', margin: 0 }}>Legibility index of 30 ft/inch (USSC). Your city&apos;s code may cap sign size.</p>
+        <p style={{ fontSize: 12.5, lineHeight: 1.55, color: 'var(--muted)', margin: 0 }}>Legibility index of 30 ft/inch (USSC). Your city&apos;s code may cap sign size.</p>
       </div>
     </div>
   )

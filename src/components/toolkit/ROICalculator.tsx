@@ -45,7 +45,7 @@ export default function ROICalculator() {
             <div key={f.id}>
               <label className="lbl" htmlFor={f.id}>{f.label}</label>
               <input id={f.id} className="inp" type="number" min={0} step={(f as any).step || 1} value={f.val} onChange={e => f.set(+e.target.value)} />
-              {(f as any).hint && <span style={{ display: 'block', fontSize: 13, color: 'var(--muted2)', marginTop: 6 }}>{(f as any).hint}</span>}
+              {(f as any).hint && <span style={{ display: 'block', fontSize: 13, color: 'var(--muted)', marginTop: 6 }}>{(f as any).hint}</span>}
             </div>
           ))}
         </div>
@@ -58,7 +58,7 @@ export default function ROICalculator() {
           <div className="out"><div className="outl">Monthly cost (5-yr life)</div><div className="outv s">{res.mo}</div></div>
           <div className="out"><div className="outl">Cost per 1,000 views</div><div className="outv s">{res.cpm}</div></div>
         </div>
-        <p style={{ fontSize: 12, lineHeight: 1.5, color: 'var(--muted2)', margin: 0 }}>Illustration from your inputs, not a promise of results.</p>
+        <p style={{ fontSize: 12.5, lineHeight: 1.55, color: 'var(--muted)', margin: 0 }}>Illustration from your inputs, not a promise of results.</p>
       </div>
     </div>
   )
