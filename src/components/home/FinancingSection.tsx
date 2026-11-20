@@ -20,7 +20,7 @@ export default function FinancingSection() {
             Open with the sign you want. Pay over time.
           </h2>
           <p style={{ fontSize: 18, lineHeight: 1.6, color: '#E6EEFF', margin: '20px 0 0', maxWidth: 520 }}>
-            Spread the cost of your sign over 12–60 months through [financing partner]. Quick application, decision in [X] hours, no effect on your credit score.
+            Spread the cost of your sign over 12–60 months with flexible business financing. Quick application, decision in 24 hours, no effect on your credit score.
           </p>
           <Link href="/quote" className="btn btn-dark" data-quote="" style={{ marginTop: 28 }}>
             Check my financing options

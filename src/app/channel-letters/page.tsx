@@ -62,9 +62,13 @@ export default function ChannelLettersPage() {
                 </li>
               ))}
             </ul>
-            {/* Anatomy visual placeholder */}
-            <div style={{ flex: '1 1 360px', minWidth: 0, background: 'var(--paper)', borderRadius: 20, height: 340, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--muted2)', fontSize: 14, border: '1px solid var(--soft)' }}>
-              [Anatomy diagram — replace with image]
+            {/* Anatomy visual */}
+            <div style={{ flex: '1 1 360px', minWidth: 0, borderRadius: 20, overflow: 'hidden', height: 340, border: '1px solid var(--soft)' }}>
+              <img
+                src="/images/signs/sign-channel.jpg"
+                alt="Channel letter anatomy"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
             </div>
           </div>
         </div>

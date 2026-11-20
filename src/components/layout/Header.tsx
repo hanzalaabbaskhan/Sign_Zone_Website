@@ -54,7 +54,7 @@ export default function Header() {
           <span className="hide-sm">Serving the Dallas–Fort Worth Metroplex · Design · Permits · Fabrication · Installation</span>
           <span style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
             <a href="tel:2147144623">Call or text 214-714-4623</a>
-            <span className="hide-sm">Mon–Fri [8am–6pm]</span>
+            <span className="hide-sm">Mon–Fri · 8:00 AM – 6:00 PM</span>
           </span>
         </div>
       </div>
