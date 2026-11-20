@@ -71,7 +71,7 @@ export default function Hero() {
               <svg className="check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4D8DFF" strokeWidth="2.5" aria-hidden="true">
                 <path d="M4 12l5 5L20 6" />
               </svg>
-              5-year warranty on parts &amp; labor
+              [X]-year warranty on parts &amp; labor
             </li>
           </ul>
         </div>

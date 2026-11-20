@@ -14,7 +14,7 @@ export default function Footer() {
             style={{ height: 56, width: 'auto', alignSelf: 'flex-start' }}
           />
           <span>Custom business signs for Dallas–Fort Worth.</span>
-          <span>Serving the Greater Dallas–Fort Worth Metroplex, TX</span>
+          <span>[Street address, City, TX ZIP]</span>
         </div>
 
         <nav aria-label="Signs">
@@ -46,7 +46,7 @@ export default function Footer() {
       </div>
 
       <div className="wrap legal">
-        <span>© 2026 Sign Zone · www.signzoneusa.com · Licensed TDLR Electrical Sign Contractor</span>
+        <span>© 2026 Sign Zone · www.signzoneusa.com · TDLR Lic. #[00000]</span>
         <span>Privacy · Terms · Accessibility</span>
       </div>
     </footer>
