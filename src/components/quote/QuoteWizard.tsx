@@ -144,19 +144,45 @@ export default function QuoteWizard({ preselect }: { preselect?: string }) {
               <p style={{ fontSize: 15, color: 'var(--muted)', margin: '0 0 20px' }}>
                 Pick everything that applies — we&apos;ll give you one quote for all of it.
               </p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px,1fr))', gap: 12 }}>
-                {QUOTE_TYPES.map((t) => (
-                  <button
-                    key={t.id}
-                    type="button"
-                    className="opt"
-                    aria-pressed={q.types.includes(t.id)}
-                    onClick={() => toggleType(t.id)}
-                  >
-                    {t.label}
-                    <small>{t.desc}</small>
-                  </button>
-                ))}
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px,1fr))', gap: 14 }}>
+                {QUOTE_TYPES.map((t) => {
+                  const isSelected = q.types.includes(t.id)
+                  return (
+                    <button
+                      key={t.id}
+                      type="button"
+                      className="quote-card"
+                      aria-pressed={isSelected}
+                      onClick={() => toggleType(t.id)}
+                    >
+                      <div className="quote-card-img">
+                        {t.image && (
+                          <img
+                            src={t.image}
+                            alt=""
+                            loading="lazy"
+                          />
+                        )}
+                        <div className="quote-card-badge" aria-hidden="true">
+                          {isSelected ? (
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                          ) : (
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.7 }}>
+                              <line x1="12" y1="5" x2="12" y2="19" />
+                              <line x1="5" y1="12" x2="19" y2="12" />
+                            </svg>
+                          )}
+                        </div>
+                      </div>
+                      <div className="quote-card-body">
+                        <span className="quote-card-title">{t.label}</span>
+                        <span className="quote-card-desc">{t.desc}</span>
+                      </div>
+                    </button>
+                  )
+                })}
               </div>
               {errors.types && <p className="err-msg">{errors.types}</p>}
             </div>

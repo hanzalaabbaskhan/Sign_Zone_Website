@@ -18,17 +18,16 @@ export const SIGN_TYPES = [
 
 // ── Quote types ───────────────────────────────────────────────────────────────
 export const QUOTE_TYPES = [
-  { id: 'channel',  label: 'Channel letters',    desc: 'Lit 3D letters on your building' },
-  { id: 'cabinet',  label: 'Cabinet / lightbox', desc: 'Lit box sign with printed face' },
-  { id: 'monument', label: 'Monument sign',       desc: 'Ground sign near the entrance' },
-  { id: 'pylon',    label: 'Pylon / pole sign',   desc: 'Tall sign for road visibility' },
-  { id: 'window',   label: 'Window graphics',     desc: 'Vinyl, hours, promos' },
-  { id: 'interior', label: 'Lobby / interior',    desc: 'Logo wall, office signs' },
-  { id: 'ada',      label: 'ADA & wayfinding',    desc: 'Room, restroom, directional' },
-  { id: 'wrap',     label: 'Vehicle wrap',         desc: 'Car, van, truck or fleet' },
-  { id: 'digital',  label: 'LED / digital',        desc: 'Message centers, menu boards' },
-  { id: 'repair',   label: 'Repair / relight',     desc: 'Fix or upgrade an existing sign' },
-  { id: 'help',     label: 'Help me choose',       desc: "We'll recommend what fits" },
+  { id: 'channel',  label: 'Channel letters',    desc: 'Lit 3D letters on your building',   image: '/images/signs/sign-channel.jpg' },
+  { id: 'cabinet',  label: 'Cabinet / lightbox', desc: 'Lit box sign with printed face',    image: '/images/signs/sign-cabinet.jpg' },
+  { id: 'monument', label: 'Monument sign',       desc: 'Ground sign near the entrance',    image: '/images/signs/sign-monument.jpg' },
+  { id: 'pylon',    label: 'Pylon / pole sign',   desc: 'Tall sign for road visibility',    image: '/images/signs/sign-pylon.jpg' },
+  { id: 'window',   label: 'Window graphics',     desc: 'Vinyl, hours, promos',             image: '/images/signs/sign-window.jpg' },
+  { id: 'interior', label: 'Lobby / interior',    desc: 'Logo wall, office signs',          image: '/images/signs/sign-lobby.jpg' },
+  { id: 'ada',      label: 'ADA & wayfinding',    desc: 'Room, restroom, directional',      image: '/images/signs/sign-ada.jpg' },
+  { id: 'wrap',     label: 'Vehicle wrap',         desc: 'Car, van, truck or fleet',        image: '/images/signs/sign-wrap.jpg' },
+  { id: 'digital',  label: 'LED / digital',        desc: 'Message centers, menu boards',    image: '/images/signs/sign-digital.jpg' },
+  { id: 'repair',   label: 'Repair / relight',     desc: 'Fix or upgrade an existing sign', image: '/images/hero-1.jpg' },
 ];
 
 export const TYPE_RANGE: Record<string, [number, number]> = {
