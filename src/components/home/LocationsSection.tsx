@@ -119,7 +119,7 @@ export default function LocationsSection() {
         <div className="location-banner">
           <div className="location-banner-copy">
             <span className="location-banner-tag">Expanded DFW Coverage</span>
-            <h3>Installing across all 13 North Texas counties</h3>
+            <h3 className="disp">Installing across all 13 North Texas counties</h3>
             <p>
               Working outside these 9 hubs? We actively survey, permit, and install in Denton, Grapevine, Southlake, Lewisville, Grand Prairie, Garland, Irving, and throughout the entire DFW Metroplex.
             </p>
