@@ -625,6 +625,8 @@ footer strong { color: #fff; }
 .facts div { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
 .facts dt { font-size: 13px; color: var(--dmuted); font-weight: 600; }
 .facts dd { margin: 4px 0 0; font-weight: 800; font-size: 18px; color: #fff; }
+.anat { position: relative; background: var(--paper); border-radius: 20px; height: 340px; overflow: hidden; }
+.pin { position: absolute; width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: #fff; font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 3px #fff; }
 .parts { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
 .parts li { display: flex; gap: 12px; align-items: flex-start; }
 .pnum { flex: 0 0 30px; height: 30px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; }
