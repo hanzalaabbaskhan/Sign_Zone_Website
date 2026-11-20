@@ -36,9 +36,10 @@ export default function BottomCTA() {
               </span>
             ))}
           </div>
-          <p style={{ fontSize: 14, color: 'var(--dmuted)', margin: '16px 0 0' }}>
-            Outside DFW or opening in several states? Ask about our multi-location program.
-          </p>
+          <div style={{ marginTop: 22, paddingTop: 18, borderTop: '1px solid rgba(255, 255, 255, 0.1)', fontSize: 13.5, lineHeight: 1.6, color: '#A0AEC0' }}>
+            Outside DFW or opening in several states?{' '}
+            <span style={{ color: '#60A5FA', fontWeight: 600 }}>Ask about our multi-location program.</span>
+          </div>
         </div>
       </div>
     </section>
