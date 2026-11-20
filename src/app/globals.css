@@ -394,132 +394,151 @@ footer strong { color: #fff; }
 /* Locations Hub Section */
 .loc-intro { font-size: 18px; line-height: 1.55; color: var(--muted); margin: 18px 0 0; max-width: 720px; }
 
-.loc-hub-grid {
+/* Location split layout */
+.loc-split {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-  margin-top: 38px;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  margin-top: 44px;
+  align-items: start;
 }
 
-.loc-hub-card {
-  background: #ffffff;
-  border: 1.5px solid #E2E8F0;
+/* Left anchor panel */
+.loc-anchor {
+  background: linear-gradient(155deg, #0d1b30 0%, #07101d 100%);
   border-radius: 18px;
-  padding: 24px 26px;
+  padding: 32px 28px 28px;
   display: flex;
   flex-direction: column;
+  gap: 14px;
+  border: 1px solid rgba(255,255,255,0.07);
+  position: sticky;
+  top: 100px;
+}
+
+.loc-anchor-badge {
+  display: inline-block;
+  background: rgba(0, 80, 240, 0.25);
+  border: 1px solid rgba(77, 141, 255, 0.4);
+  color: var(--elec);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.loc-anchor-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.loc-anchor-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.55);
+  margin: 0;
+}
+
+.loc-anchor-cta {
+  margin-top: 6px;
+  font-size: 14px !important;
+  padding: 11px 18px !important;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Right city box grid (2 in a row) */
+.loc-right-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.loc-box-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.loc-box {
+  background: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 13px 18px;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.2s ease;
-  position: relative;
-  min-height: 200px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease, background 0.15s ease;
 }
 
-.loc-hub-card:hover {
-  transform: translateY(-4px);
+.loc-box:hover {
   border-color: var(--blue);
-  box-shadow: 0 14px 30px -6px rgba(0, 80, 240, 0.12), 0 4px 10px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 6px 18px -3px rgba(0, 80, 240, 0.12);
+  transform: translateY(-1px);
 }
 
-.loc-card-head {
+.loc-box-info {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.loc-pin-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: #EFF6FF;
-  color: var(--blue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.loc-hub-card:hover .loc-pin-icon {
-  background: var(--blue);
-  color: #ffffff;
-}
-
-.loc-card-arrow-circle {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: #F8FAFC;
-  border: 1px solid #E2E8F0;
-  color: #64748B;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
-}
-
-.loc-hub-card:hover .loc-card-arrow-circle {
-  background: var(--blue);
-  border-color: var(--blue);
-  color: #ffffff;
-  transform: translate(2px, -2px);
-}
-
-.loc-card-main {
-  margin: 16px 0 14px;
-}
-
-.loc-card-city {
-  font-family: Archivo, sans-serif;
-  font-size: 22px;
-  font-weight: 800;
+.loc-box-city {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
   color: var(--navy);
-  margin: 0;
-  line-height: 1.15;
   transition: color 0.15s ease;
 }
 
-.loc-hub-card:hover .loc-card-city {
+.loc-box:hover .loc-box-city {
   color: var(--blue);
 }
 
-.loc-card-county {
-  display: block;
-  font-size: 11.5px;
-  font-weight: 700;
-  color: #64748B;
+.loc-box-county {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94A3B8;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-top: 4px;
+  letter-spacing: 0.06em;
 }
 
-.loc-card-districts {
-  font-size: 13.5px;
-  line-height: 1.45;
-  color: var(--muted);
-  margin: 10px 0 0;
-}
-
-.loc-card-foot {
-  padding-top: 14px;
-  border-top: 1px solid #F1F5F9;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--blue);
-}
-
-.loc-foot-arrow {
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+.loc-box-arrow {
+  font-size: 15px;
+  color: #94A3B8;
+  text-align: right;
+  transition: color 0.15s ease, transform 0.15s ease;
   display: inline-block;
+  margin-left: 10px;
 }
 
-.loc-hub-card:hover .loc-foot-arrow {
-  transform: translateX(4px);
+.loc-box:hover .loc-box-arrow {
+  color: var(--blue);
+  transform: translateX(3px);
+}
+
+.loc-list-footnote {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 16px 8px 0;
+}
+
+.loc-list-ask {
+  color: var(--blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.loc-list-ask:hover {
+  text-decoration: underline;
 }
 
 /* Location Bottom Full-Width Banner */
@@ -881,7 +900,7 @@ footer strong { color: #fff; }
 @media (max-width: 1020px) {
   .trust .wrap { grid-template-columns: repeat(2, minmax(0,1fr)); }
   footer .cols { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .loc-hub-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .loc-split { grid-template-columns: 240px 1fr; }
   .location-banner { flex-direction: column; align-items: flex-start; padding: 28px 24px; gap: 20px; }
   .location-banner-actions { width: 100%; flex-wrap: wrap; }
   .location-banner-actions .btn { flex: 1; min-width: 200px; }
@@ -889,9 +908,12 @@ footer strong { color: #fff; }
 @media (max-width: 850px) {
   .case-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .city-hero .wrap { grid-template-columns: 1fr; gap: 28px; padding-top: 45px; padding-bottom: 55px; }
+  .loc-box-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
-  .loc-hub-grid { grid-template-columns: 1fr; }
+  .loc-split { grid-template-columns: 1fr; }
+  .loc-anchor { position: static; }
+  .loc-box-grid { grid-template-columns: 1fr; }
   .location-banner-actions .btn { width: 100%; }
 }
 @media (max-width: 760px) {
