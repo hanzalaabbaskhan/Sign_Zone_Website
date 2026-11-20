@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 export default function ChannelLettersPage() {
   return (
-    <div className="view dark" id="v-channel-letters">
+    <div className="view" id="v-channel-letters">
       {/* Hero Section */}
-      <section>
+      <section className="dark">
         <div className="wrap" style={{ paddingTop: 28, paddingBottom: 88 }}>
           <nav aria-label="Breadcrumb" style={{ fontSize: 14, color: 'var(--dmuted)' }}>
             <Link href="/" style={{ color: 'var(--dmuted)' }}>Home</Link>
@@ -23,12 +23,12 @@ export default function ChannelLettersPage() {
             <span style={{ color: '#fff' }}>Channel letters</span>
           </nav>
 
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 48, alignItems: 'center', marginTop: 36 }}>
-            <div style={{ flex: '1 1 440px', minWidth: 0 }}>
-              <h1 className="disp sec-h" style={{ fontSize: 'clamp(36px,6vw,66px)', lineHeight: .95, margin: 0 }}>
+          <div className="cl-hero-grid">
+            <div style={{ minWidth: 0 }}>
+              <h1 className="disp sec-h" style={{ fontSize: 'clamp(32px, 3.8vw, 48px)', lineHeight: 1.02, margin: 0, maxWidth: 480 }}>
                 Channel letter signs for DFW storefronts.
               </h1>
-              <p style={{ fontSize: 19, lineHeight: 1.55, color: 'var(--dsub)', margin: '22px 0 0' }}>
+              <p style={{ fontSize: 18, lineHeight: 1.55, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 480 }}>
                 Individually built 3D letters, lit with LEDs, mounted to your building. The sign most landlords ask for, and the one customers read from the road.
               </p>
               <dl className="facts">
@@ -42,7 +42,7 @@ export default function ChannelLettersPage() {
               </div>
             </div>
 
-            <div style={{ flex: '1.1 1 480px', minWidth: 0 }}>
+            <div style={{ minWidth: 0 }}>
               <LightingDemo />
             </div>
           </div>
