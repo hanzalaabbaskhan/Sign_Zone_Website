@@ -36,9 +36,35 @@ export default function BottomCTA() {
               </span>
             ))}
           </div>
-          <div style={{ marginTop: 22, paddingTop: 18, borderTop: '1px solid rgba(255, 255, 255, 0.1)', fontSize: 13.5, lineHeight: 1.6, color: '#A0AEC0' }}>
-            Outside DFW or opening in several states?{' '}
-            <span style={{ color: '#60A5FA', fontWeight: 600 }}>Ask about our multi-location program.</span>
+          <div
+            style={{
+              marginTop: 22,
+              padding: '14px 16px',
+              background: 'rgba(255, 255, 255, 0.04)',
+              border: '1px solid rgba(255, 255, 255, 0.09)',
+              borderRadius: 12,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 5,
+            }}
+          >
+            <span style={{ fontSize: 13, color: '#C8D3E6', lineHeight: 1.4 }}>
+              Outside DFW or opening in several states?
+            </span>
+            <Link
+              href="/quote"
+              style={{
+                fontSize: 13.5,
+                fontWeight: 700,
+                color: 'var(--elec)',
+                textDecoration: 'none',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 6,
+              }}
+            >
+              Ask about our multi-location program <span>→</span>
+            </Link>
           </div>
         </div>
       </div>
