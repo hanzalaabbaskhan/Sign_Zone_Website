@@ -397,9 +397,9 @@ footer strong { color: #fff; }
 /* Location split layout */
 .loc-split {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 380px 1fr;
   gap: 28px;
-  margin-top: 44px;
+  margin-top: 40px;
   align-items: start;
 }
 
@@ -407,10 +407,10 @@ footer strong { color: #fff; }
 .loc-anchor {
   background: linear-gradient(155deg, #0d1b30 0%, #07101d 100%);
   border-radius: 18px;
-  padding: 32px 28px 28px;
+  padding: 38px 34px 34px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
   border: 1px solid rgba(255,255,255,0.07);
   position: sticky;
   top: 100px;
@@ -432,26 +432,25 @@ footer strong { color: #fff; }
 
 .loc-anchor-title {
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 800;
   color: #ffffff;
-  line-height: 1.25;
+  line-height: 1.2;
   margin: 0;
 }
 
 .loc-anchor-body {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.6);
   margin: 0;
 }
 
 .loc-anchor-cta {
   margin-top: 6px;
   font-size: 14px !important;
-  padding: 11px 18px !important;
-  text-align: center;
-  justify-content: center;
+  padding: 12px 22px !important;
+  width: fit-content;
 }
 
 /* Right city box grid (2 in a row) */
@@ -842,7 +841,7 @@ footer strong { color: #fff; }
 @media (max-width: 1020px) {
   .trust .wrap { grid-template-columns: repeat(2, minmax(0,1fr)); }
   footer .cols { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .loc-split { grid-template-columns: 240px 1fr; }
+  .loc-split { grid-template-columns: 320px 1fr; gap: 20px; }
 }
 @media (max-width: 850px) {
   .case-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
