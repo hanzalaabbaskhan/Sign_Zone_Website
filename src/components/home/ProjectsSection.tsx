@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function ProjectsSection() {
   return (
     <section className="light sec" id="projects">
@@ -10,7 +12,7 @@ export default function ProjectsSection() {
 
         <div className="case-grid">
           {/* Card 1: Arwa Coffee */}
-          <article className="case-card">
+          <article className="case-card" id="arwa-coffee">
             <div className="case-image">
               <img
                 src="/images/project-arwa.webp"
@@ -34,20 +36,27 @@ export default function ProjectsSection() {
                   </p>
                   <strong>Sign system</strong>
                   <p>Dimensional storefront letters + logo</p>
-                  <a
-                    href="https://www.signexpressusa.com/projects/arwa-coffee-storefront-sign/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/quote?type=channel"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 6,
+                      marginTop: 12,
+                      fontSize: 14,
+                      fontWeight: 700,
+                      color: 'var(--blue)',
+                    }}
                   >
-                    View source project ↗
-                  </a>
+                    Request a quote for a sign like this →
+                  </Link>
                 </div>
               </details>
             </div>
           </article>
 
           {/* Card 2: Apex Specialty Care */}
-          <article className="case-card">
+          <article className="case-card" id="apex-specialty-care">
             <div className="case-image">
               <img
                 src="/images/project-apex.webp"
@@ -71,20 +80,27 @@ export default function ProjectsSection() {
                   </p>
                   <strong>Sign system</strong>
                   <p>Illuminated channel letters + logo</p>
-                  <a
-                    href="https://www.signexpressusa.com/projects/apex-specialty-care-illuminated-sign/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/quote?type=channel"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 6,
+                      marginTop: 12,
+                      fontSize: 14,
+                      fontWeight: 700,
+                      color: 'var(--blue)',
+                    }}
                   >
-                    View source project ↗
-                  </a>
+                    Request a quote for a sign like this →
+                  </Link>
                 </div>
               </details>
             </div>
           </article>
 
           {/* Card 3: A Mart Food Market */}
-          <article className="case-card">
+          <article className="case-card" id="a-mart">
             <div className="case-image">
               <img
                 src="/images/project-amart.webp"
@@ -108,20 +124,27 @@ export default function ProjectsSection() {
                   </p>
                   <strong>Sign system</strong>
                   <p>Channel letters + logo cabinet + backer</p>
-                  <a
-                    href="https://www.signexpressusa.com/projects/a-mart-food-market-channel-letters/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/quote?type=channel"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 6,
+                      marginTop: 12,
+                      fontSize: 14,
+                      fontWeight: 700,
+                      color: 'var(--blue)',
+                    }}
                   >
-                    View source project ↗
-                  </a>
+                    Request a quote for a sign like this →
+                  </Link>
                 </div>
               </details>
             </div>
           </article>
 
           {/* Card 4: Sanjiva Medical Spa */}
-          <article className="case-card">
+          <article className="case-card" id="sanjiva-spa">
             <div className="case-image">
               <img
                 src="/images/project-sanjiva.webp"
@@ -145,20 +168,27 @@ export default function ProjectsSection() {
                   </p>
                   <strong>Sign system</strong>
                   <p>Halo-lit letters + logo</p>
-                  <a
-                    href="https://www.signexpressusa.com/projects/sanjiva-medical-spa-interior-sign/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/quote?type=channel"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 6,
+                      marginTop: 12,
+                      fontSize: 14,
+                      fontWeight: 700,
+                      color: 'var(--blue)',
+                    }}
                   >
-                    View source project ↗
-                  </a>
+                    Request a quote for a sign like this →
+                  </Link>
                 </div>
               </details>
             </div>
           </article>
 
           {/* Card 5: Scratch Wings */}
-          <article className="case-card">
+          <article className="case-card" id="scratch-wings">
             <div className="case-image">
               <img
                 src="/images/project-scratch.webp"
@@ -182,13 +212,20 @@ export default function ProjectsSection() {
                   </p>
                   <strong>Sign system</strong>
                   <p>Channel letters + logo + tagline cabinet</p>
-                  <a
-                    href="https://www.signexpressusa.com/projects/scratch-wings-restaurant-sign/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/quote?type=channel"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 6,
+                      marginTop: 12,
+                      fontSize: 14,
+                      fontWeight: 700,
+                      color: 'var(--blue)',
+                    }}
                   >
-                    View source project ↗
-                  </a>
+                    Request a quote for a sign like this →
+                  </Link>
                 </div>
               </details>
             </div>

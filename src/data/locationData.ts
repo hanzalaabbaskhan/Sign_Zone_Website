@@ -56,7 +56,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
         "eyebrow": "Arlington \u00b7 Gold dimensional storefront letters and logo",
         "title": "Arwa Coffee",
         "desc": "Gold dimensional storefront letters and logo for a local business in Arlington.",
-        "link": "https://www.signexpressusa.com/projects/arwa-coffee-storefront-sign/"
+        "link": "/projects#arwa-coffee"
       }
     ],
     "ctaEye": "Let's get started",
@@ -80,7 +80,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
         "eyebrow": "Carrollton \u00b7 Dimensional storefront letters and logo",
         "title": "Ozone Laundry Lab",
         "desc": "Dimensional storefront letters and logo for a local business in Carrollton.",
-        "link": "https://www.signexpressusa.com/projects/ozone-laundry-lab-channel-letters/"
+        "link": "/projects"
       }
     ],
     "ctaEye": "Let's get started",
@@ -104,7 +104,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
         "eyebrow": "Dallas \u00b7 Channel letters and logo cabinet",
         "title": "A Mart Food Market",
         "desc": "Channel letters and logo cabinet for a local business in Dallas.",
-        "link": "https://www.signexpressusa.com/projects/a-mart-food-market-channel-letters/"
+        "link": "/projects#a-mart"
       },
       {
         "img": "/images/locations/dallas-sanjiva.webp",
@@ -112,7 +112,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
         "eyebrow": "Dallas \u00b7 Halo-lit dimensional letters and logo",
         "title": "Sanjiva Medical Spa",
         "desc": "Halo-lit dimensional letters and logo for a local business in Dallas.",
-        "link": "https://www.signexpressusa.com/projects/sanjiva-medical-spa-interior-sign/"
+        "link": "/projects#sanjiva-spa"
       }
     ],
     "ctaEye": "Let's get started",
@@ -136,7 +136,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
         "eyebrow": "Fort Worth \u00b7 Channel letters and entry panel",
         "title": "All-Integrity Insurance",
         "desc": "Channel letters and entry panel for a local business in Fort Worth.",
-        "link": "https://www.signexpressusa.com/projects/all-integrity-insurance-channel-letters/"
+        "link": "/projects"
       }
     ],
     "ctaEye": "Let's get started",
@@ -160,7 +160,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
         "eyebrow": "Frisco \u00b7 Dimensional storefront letters and logo",
         "title": "Nritya Dance",
         "desc": "Dimensional storefront letters and logo for a local business in Frisco.",
-        "link": "https://www.signexpressusa.com/projects/nritya-dance-storefront-sign/"
+        "link": "/projects"
       }
     ],
     "ctaEye": "Let's get started",
@@ -184,7 +184,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
         "eyebrow": "McKinney \u00b7 Dimensional sign panel and logo",
         "title": "Royce Recovery",
         "desc": "Dimensional sign panel and logo for a local business in McKinney.",
-        "link": "https://www.signexpressusa.com/projects/royce-recovery-business-sign/"
+        "link": "/projects"
       }
     ],
     "ctaEye": "Let's get started",
@@ -208,7 +208,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
         "eyebrow": "Plano \u00b7 Illuminated building letters and logo",
         "title": "Apex Specialty Care",
         "desc": "Illuminated building letters and logo for a local business in Plano.",
-        "link": "https://www.signexpressusa.com/projects/apex-specialty-care-illuminated-sign/"
+        "link": "/projects#apex-specialty-care"
       }
     ],
     "ctaEye": "Let's get started",
@@ -232,7 +232,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
         "eyebrow": "Richardson \u00b7 Dimensional building letters and logo",
         "title": "Jabil",
         "desc": "Dimensional building letters and logo for a local business in Richardson.",
-        "link": "https://www.signexpressusa.com/projects/jabil-building-sign/"
+        "link": "/projects"
       }
     ],
     "ctaEye": "Let's get started",

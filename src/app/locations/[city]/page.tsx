@@ -92,9 +92,9 @@ export default async function LocationPage({ params }: { params: Promise<Params>
                     <div className="eyebrow">{project.eyebrow}</div>
                     <h3>{project.title}</h3>
                     <p>{project.desc}</p>
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      View project details ↗
-                    </a>
+                    <Link href={project.link} className="city-project-link">
+                      View project details →
+                    </Link>
                   </div>
                 </article>
               ))}
