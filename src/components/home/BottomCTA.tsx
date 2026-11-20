@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { CITIES_ALL } from '@/data/siteData'
+import { CITIES_ALL, LOCATION_PAGES } from '@/data/siteData'
 
 export default function BottomCTA() {
   return (
@@ -29,16 +29,75 @@ export default function BottomCTA() {
 
         <div className="tool" style={{ flex: '1 1 360px', minWidth: 0, padding: 28 }}>
           <div className="kv" style={{ color: 'var(--dmuted)' }}>Where we install</div>
-          <div className="chips" id="cities" style={{ gap: 8, marginTop: 14 }}>
-            {CITIES_ALL.map((city) => (
-              <span key={city} className="chip chip-d">
-                {city}
-              </span>
-            ))}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+              gap: '6px 10px',
+              marginTop: 14,
+            }}
+          >
+            {CITIES_ALL.map((city) => {
+              const loc = LOCATION_PAGES.find(
+                (l) => l.name.toLowerCase() === city.toLowerCase()
+              )
+              const inner = (
+                <>
+                  <span
+                    style={{
+                      width: 5,
+                      height: 5,
+                      borderRadius: '50%',
+                      background: 'var(--elec)',
+                      flexShrink: 0,
+                    }}
+                  />
+                  <span style={{ fontSize: 13, fontWeight: 500, color: '#D5DCEA' }}>
+                    {city}
+                  </span>
+                </>
+              )
+
+              return loc ? (
+                <Link
+                  key={city}
+                  href={`/locations/${loc.slug}`}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 8,
+                    padding: '7px 10px',
+                    borderRadius: 8,
+                    background: 'rgba(255, 255, 255, 0.03)',
+                    border: '1px solid rgba(255, 255, 255, 0.06)',
+                    textDecoration: 'none',
+                    transition: 'all 0.15s ease',
+                  }}
+                  className="city-link-item"
+                >
+                  {inner}
+                </Link>
+              ) : (
+                <div
+                  key={city}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 8,
+                    padding: '7px 10px',
+                    borderRadius: 8,
+                    background: 'rgba(255, 255, 255, 0.02)',
+                    border: '1px solid rgba(255, 255, 255, 0.04)',
+                  }}
+                >
+                  {inner}
+                </div>
+              )
+            })}
           </div>
           <div
             style={{
-              marginTop: 22,
+              marginTop: 20,
               padding: '14px 16px',
               background: 'rgba(255, 255, 255, 0.04)',
               border: '1px solid rgba(255, 255, 255, 0.09)',

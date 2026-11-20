@@ -263,6 +263,14 @@ td { color: var(--muted); }
 .mini { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
 .mini > div { background: var(--ink); border-radius: 14px; padding: 18px; }
 .mini > div.hl { background: var(--blue); }
+.city-link-item:hover {
+  background: rgba(0, 80, 240, 0.18) !important;
+  border-color: rgba(96, 165, 250, 0.45) !important;
+  transform: translateX(2px);
+}
+.city-link-item:hover span:last-child {
+  color: #fff !important;
+}
 .panel { background: #fff; border: 1px solid var(--soft); border-radius: 20px; padding: 36px; }
 .flex-main { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
 .flex-main > .main { flex: 999 1 560px; min-width: 0; }
