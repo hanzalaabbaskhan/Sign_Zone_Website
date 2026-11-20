@@ -6,11 +6,7 @@ export const metadata: Metadata = {
   description: 'Get a free quote for channel letters, monument signs, vehicle wraps and more. Sign Zone serves the entire Dallas–Fort Worth metroplex.',
 }
 
-export default function QuotePage({
-  searchParams,
-}: {
-  searchParams: Promise<{ type?: string }>
-}) {
+export default function QuotePage() {
   return (
     <section className="paper" style={{ minHeight: '80vh' }}>
       <div className="wrap" style={{ paddingTop: 44, paddingBottom: 80 }}>
