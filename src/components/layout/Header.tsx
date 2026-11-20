@@ -74,8 +74,8 @@ export default function Header() {
           </Link>
 
           <nav className="main" aria-label="Main">
-            <Link href="/#signs" className="navlink">Signs</Link>
-            <Link href="/#industries" className="navlink">Industries</Link>
+            <Link href="/signs" className="navlink">Signs</Link>
+            <Link href="/industries" className="navlink">Industries</Link>
 
             {/* Locations dropdown */}
             <div className="nav-locations" ref={locRef}>
@@ -126,11 +126,11 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/#projects" className="navlink">Projects</Link>
+            <Link href="/projects" className="navlink">Projects</Link>
             <Link href="/toolkit" className="navlink">Sign Toolkit</Link>
-            <Link href="/#process" className="navlink">How it works</Link>
-            <Link href="/#financing" className="navlink">Financing</Link>
-            <Link href="/#resources" className="navlink">Guides</Link>
+            <Link href="/process" className="navlink">How it works</Link>
+            <Link href="/financing" className="navlink">Financing</Link>
+            <Link href="/guides" className="navlink">Guides</Link>
           </nav>
 
           <div className="hdr-cta">
@@ -154,19 +154,19 @@ export default function Header() {
 
       {/* Mobile nav */}
       <nav className={`mnav${mobileOpen ? ' open' : ''}`} aria-label="Mobile">
-        <Link href="/#signs" onClick={() => setMobileOpen(false)}>Signs</Link>
-        <Link href="/#industries" onClick={() => setMobileOpen(false)}>Industries</Link>
+        <Link href="/signs" onClick={() => setMobileOpen(false)}>Signs</Link>
+        <Link href="/industries" onClick={() => setMobileOpen(false)}>Industries</Link>
         <Link href="/#locations" onClick={() => setMobileOpen(false)}>Locations</Link>
         {LOCATION_PAGES.map((loc) => (
           <Link key={loc.slug} href={`/locations/${loc.slug}`} onClick={() => setMobileOpen(false)} style={{ paddingLeft: 36, fontSize: 14 }}>
             {loc.name}
           </Link>
         ))}
-        <Link href="/#projects" onClick={() => setMobileOpen(false)}>Projects</Link>
+        <Link href="/projects" onClick={() => setMobileOpen(false)}>Projects</Link>
         <Link href="/toolkit" onClick={() => setMobileOpen(false)}>Sign Toolkit</Link>
-        <Link href="/#process" onClick={() => setMobileOpen(false)}>How it works</Link>
-        <Link href="/#financing" onClick={() => setMobileOpen(false)}>Financing</Link>
-        <Link href="/#resources" onClick={() => setMobileOpen(false)}>Guides</Link>
+        <Link href="/process" onClick={() => setMobileOpen(false)}>How it works</Link>
+        <Link href="/financing" onClick={() => setMobileOpen(false)}>Financing</Link>
+        <Link href="/guides" onClick={() => setMobileOpen(false)}>Guides</Link>
         <Link href="/quote" onClick={() => setMobileOpen(false)}>Get a Free Quote</Link>
       </nav>
     </>
